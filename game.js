@@ -522,7 +522,8 @@ if(!human)
 
 
     }
-    
+    //commenting temp
+   /* 
     if(tog && start && (submit[w] == false))
     {
        
@@ -541,42 +542,6 @@ if(!human)
         document.getElementById('b'+y+z).innerHTML ='X';
 
     
-            for(var ai = 0;ai < 3;ai++)
-            {
-                for(var aj = 0;aj < 3;aj++)
-                {
-                    if(((aj == 0 || aj == 2) && (ai == 0 || ai == 2)) || (ai == 1 && aj == 1))
-                    {
-                        document.getElementById('b'+ai+aj).style.backgroundColor = "White";
-                        document.getElementById('b'+ai+aj).style.color = 'Black';
-                
-                    }
-                    else{
-                        document.getElementById('b'+ai+aj).style.backgroundColor = "Black";
-                        document.getElementById('b'+ai+aj).style.color = 'White';
-                      
-                    }
-                }
-            }
-            
-    }
-    else if(start && (submit[w] == false))
-    {
-        document.getElementById('player_name').innerHTML ='Player 1';
-        document.getElementById('player_name').style.color = "Black";
-        tog = true;
-        submit[w] = true;
-        /*document.getElementById('b'+y+z).style.backgroundColor = "Black";
-        document.getElementById('b'+y+z).style.color = 'White';*/
-        document.getElementById("b").style.backgroundColor = "White";
-        document.getElementById("start").style.backgroundColor = "Black";
-        document.getElementById('start').style.color = 'White';
-        document.getElementById("computer").style.backgroundColor = "Black";
-        document.getElementById('computer').style.color = 'White';
-
-
-        document.getElementById('b'+y+z).innerHTML ='O';
-
 
         for(var ai = 0;ai < 3;ai++)
         {
@@ -598,7 +563,69 @@ if(!human)
 
 
 
-    }
+
+        for(var ai = 0;ai < 3;ai++)
+        {
+            for(var aj = 0;aj < 3;aj++)
+            {
+                if(!((aj == 0 || aj == 2) && (ai == 0 || ai == 2)) || (ai == 1 && aj == 1))
+                {
+                    document.getElementById('b'+ai+aj).style.backgroundColor = "White";
+                    document.getElementById('b'+ai+aj).style.color = 'Black';
+            
+                }
+                else{
+                    document.getElementById('b'+ai+aj).style.backgroundColor = "Black";
+                    document.getElementById('b'+ai+aj).style.color = 'White';
+                  
+                }
+            }
+        }
+            
+    }   */
+/*else if(start && (submit[w] == false))
+    {*/
+        document.getElementById('player_name').innerHTML ='Player 1';
+        document.getElementById('player_name').style.color = "Black";
+        tog = true;
+        submit[w] = true;
+        /*document.getElementById('b'+y+z).style.backgroundColor = "Black";
+        document.getElementById('b'+y+z).style.color = 'White';*/
+        document.getElementById("b").style.backgroundColor = "White";
+        document.getElementById("start").style.backgroundColor = "Black";
+        document.getElementById('start').style.color = 'White';
+        document.getElementById("computer").style.backgroundColor = "Black";
+        document.getElementById('computer').style.color = 'White';
+
+
+        document.getElementById('b'+y+z).innerHTML ='O';
+
+
+        
+
+        for(var ai = 0;ai < 3;ai++)
+        {
+            for(var aj = 0;aj < 3;aj++)
+            {
+                if(((aj == 0 || aj == 2) && (ai == 0 || ai == 2)) || (ai == 1 && aj == 1))
+                {
+                    console.log("came at" + ai + aj);
+                    document.getElementById('b'+ai+aj).style.backgroundColor = "White";
+                    document.getElementById('b'+ai+aj).style.color = 'Black';
+            
+                }
+                else{
+                    document.getElementById('b'+ai+aj).style.backgroundColor = "Black";
+                    document.getElementById('b'+ai+aj).style.color = 'White';
+                  
+                }
+            }
+        }
+
+
+
+  //  }
+  /*
     else if(start == false)
     {
         alert("kindly press the start button to play");
@@ -607,7 +634,7 @@ if(!human)
     {
         document.getElementById('game_discription').style.color = 'Red';
         document.getElementById('game_discription').innerHTML ='Already Marked';
-    }
+    }*/
 
 
 
@@ -705,7 +732,7 @@ if(!human)
         count = -1;
     }
 
-
+//checkin if won
 
 
     for(i = 0;i < 3 & !done;i ++)
