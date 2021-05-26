@@ -1,0 +1,103 @@
+#player_name{
+    position: fixed;
+    top: 10%;
+    left: 44%;
+    font-size: xx-large;
+    text-decoration: underline;
+}
+
+#game_refresh{
+    position: fixed;
+    top: 5%;
+    left: 90%;
+    font-size: large;
+}
+
+
+#button_group{
+    position: fixed;
+    top: 25%;
+    left: 40%;
+}
+
+
+
+#game_body{
+    position: fixed;
+    top: 25%;
+    left: 38%;
+}
+
+#h1{
+ width: 300px;   
+ height: 5px;
+ background-color: black;
+ position: relative;
+ top: 40px;
+}
+
+#h2{
+width: 300px;   
+height: 5px;
+background-color: black;
+position: relative;
+top: -160px;
+left: 0px;
+}
+
+#v1{
+width: 5px;   
+height: 300px;
+background-color: black;
+position: relative;
+top: -56px;
+left: 100px;
+}
+
+#v2{
+width: 5px;   
+height: 300px;
+background-color: black;
+position: relative;
+top: -360px;
+left: 200px;
+}
+
+#game_discription{
+    position: fixed;
+    top: 70%;
+    left: 42%;
+    font-size: xx-large;
+}
+
+
+
+#start{
+    background-color: Black;
+    border: none;
+    color: white;
+    padding:5px 5px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 150px;
+    position: fixed;
+    top: 85%;
+    left: 44%;
+    font-size: xx-large;
+}
+
+#computer{
+    background-color: Black;
+    border: none;
+    color: white;
+    padding: ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: fixed;
+    top: 2%;
+    left: 44%;
+    width: 150px;
+    font-size: large;
+}
